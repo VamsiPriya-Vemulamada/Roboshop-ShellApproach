@@ -7,5 +7,5 @@ systemctl start mongod
 
 #Updating the IP address by using SED editor, this is used for automation rather than Vi editor
 sed -i -e 's/127.0.0.1 0.0.0.0/' /etc/mongod.conf
-
+#restart mongodb
 systemctl restart mongod
