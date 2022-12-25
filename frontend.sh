@@ -1,3 +1,4 @@
+#!/bin/bash
 yum install ngnix -y
 
 #downloading the code
