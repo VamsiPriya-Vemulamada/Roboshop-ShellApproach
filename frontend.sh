@@ -1,13 +1,13 @@
 #!/bin/bash
 
-yum install ngnix -y
+yum install nginx  -y
 systemctl enable nginx
 systemctl start ngnix
 
 #downloading the code
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 #download the content
-cd /usr/share/ngnix/html
+cd /usr/share/nginx/html
 rm -rf *
 unzip /tmp/fronntend.zip
 mv frontend-main/static/* .
