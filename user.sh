@@ -12,7 +12,7 @@ mv user-main user
 cd /home/roboshop/user
 npm install
 
-#Updating the servers
+#Updating the servers IP address
 sed -i -e 's/REDIS_ENDPOINT/redis.devops69.online/' -e '/MONGO_ENDPOINT/mongo.devopsb69.online/' systemd.service
 mv /home/roboshop/user/systemd.service /etc/systemd/system/user.service
 systemctl daemon-reload
