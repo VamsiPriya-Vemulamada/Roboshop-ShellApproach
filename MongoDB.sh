@@ -11,7 +11,7 @@
 #systemctl restart mongod
 
 COMPONENT=mongodb
-Source common.roboshop
+source common.roboshop
 
 PRINT "Download YUM Repo File"
 curl -s -o /etc/yum.repos.d/mongodb.repo https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo &>>$LOG
