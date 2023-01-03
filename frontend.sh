@@ -10,7 +10,7 @@
 # mv frontend-main/static/* .
 # mv frontend-main/localhost.conf /etc/nginx/default.d/roboshop.conf
 
-# How to comment the whole code: CTRL+SHIFT+/
+# How to comment the whole code: CTRL+/
 
 COMPONENT=frontend
 CONTENT="*"
